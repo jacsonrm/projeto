@@ -1,0 +1,56 @@
+/***
+    estilo padrão
+***/
+
+html, body {
+    color: #134678;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+.barra-topo-titulo {
+    background: url("../img/bgHeader.jpg") no-repeat scroll right top rgb(19, 70, 120);
+    height: 37px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.barra-topo-titulo-texto {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.barra-topo-titulo-texto-usuario {
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.ui-widget-header {
+    font-size: 12px;
+}
+
+.ui-widget .ui-widget {
+    font-size: 12px;
+}
+
+a.link-sem-estilo:link, a.link-sem-estilo:hover, a.link-sem-estilo:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.dataTableEscondeNomeColuna table thead tr {
+    display: none;
+}
+
+.panelGridCentro {
+    margin: 0 auto;
+}
+
+.dataGridNoBorder>.ui-datagrid-content {
+   border: none;
+} 
