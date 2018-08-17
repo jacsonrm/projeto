@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <meta charset="UTF-8"/>
+    <h:outputStylesheet name="layout-padrao.css" library="css"/>
+    <h:outputStylesheet name="financas.css" library="css"/>
+    <h:outputScript name="default.js" library="js"/>
+</h:head>
+<h:body>
+    <div class="barra-topo-titulo">
+        <ui:debug/>
+        <ui:insert name="barra-topo">
+            <h:form class="barra-topo-titulo-texto-usuario">
+                <a class="barra-topo-titulo-texto" href="#{request.contextPath}"><h:outputText escape="false"
+                                                                                               value="#{configuracao.aplicacaoNome}"/></a>
+                <h2><h:outputText value="#{messages['application.name']}"/></h2>
+            </h:form>
+        </ui:insert>
+    </div>
+
+    <div style="padding: 10px" class="div-menu">
+        <ui:include src="/layout/layout-padrao-menu-topo.xhtml"/>
+    </div>
+
+    <div style="padding: 10px" class="div-conteudo">
+        <p:confirmDialog global="true" showEffect="fade" hideEffect="explode">
+            <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>
+            <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>
+        </p:confirmDialog>
+        <p:growl id="growl" autoUpdate="true" showSummary="true" showDetail="false"/>
+        <p:dialog id="exceptionDialog"
+                  header="Exceção '#{pfExceptionHandler.type}' ocorreu!"
+                  widgetVar="exceptionDialog" height="500px">
+            Message: #{pfExceptionHandler.message} <br/>
+            StackTrace: <h:outputText
+                value="#{pfExceptionHandler.formattedStackTrace}" escape="false"/>
+            <br/>
+
+            <p:button onclick="document.location.href = document.location.href;"
+                      value="Reload!"
+                      rendered="#{pfExceptionHandler.type == 'javax.faces.application.ViewExpiredException'}"/>
+        </p:dialog>
+        <p:ajaxStatus style="position:fixed;right:7px;bottom:7px;">
+            <f:facet name="start">
+                <p:graphicImage name="ajax-loader.gif" library="img"/>
+            </f:facet>
+        </p:ajaxStatus>
+        <ui:insert name="conteudo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </ui:insert>
+    </div>
+</h:body>
+
+</html>

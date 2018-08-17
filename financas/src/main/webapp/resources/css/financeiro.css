@@ -1,0 +1,352 @@
+.header {
+    background: url(../img/destaque.jpeg) no-repeat;
+    background-size: cover; /*ajusta de acordo com o tamanho da página*/
+}
+
+.main-menu {
+    text-align: center;
+
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 2px 32px 0;
+}
+
+.menu-item a {
+    color: white;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu-item a:hover {
+    background-color: #48A3A6;
+
+}
+
+@media (min-width: 650px) {
+    div.botoesAcao button {
+        margin-left: 20px;
+    }
+}
+
+.destaqueCampo {
+    font-weight: bold;
+}
+
+.infoDiscreta {
+    font-style: italic;
+    color: gray;
+    font-weight: normal;
+}
+
+button.botao-pequeno {
+    font-size: .8em !important;
+}
+
+.containerAcoes {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.containerAcoes button {
+    margin-right: 20px;
+}
+
+.sem-borda tr, .sem-borda td {
+    border-style: none !important;
+}
+
+div.ui-panel {
+    margin-bottom: 20px;
+}
+
+div.NAO-UTIL {
+    background-color: #DDD;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.italico {
+    font-style: italic;
+}
+
+div.ui-row-editor {
+    display: inline;
+    margin-right: 5px;
+}
+
+div.ui-row-editor:after {
+    clear: none !important;
+}
+
+a.row-editor-command-link {
+    display: inline-block;;
+}
+
+a.campoExtra {
+    margin: 3px 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed;
+    line-height: 0.1em;
+    cursor: pointer;
+}
+
+a.campoExtra span {
+    background: #fff;
+    padding: 0 7px;
+}
+
+div.botoesAcao {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+div.botoesAcao button {
+    margin-left: 10px;
+}
+
+td.celulaAcoes {
+    text-align: center;
+}
+
+td.celulaAcoes button {
+    margin: 1px 2px;
+}
+
+.ui-autocomplete-multiple, .ui-selectonemenu {
+    vertical-align: middle;
+}
+
+button.quickAction {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.ui-autocomplete-multiple {
+    display: inline-block;
+}
+
+.DEVOLVER td {
+    background-color: #FEE !important;
+}
+
+.RENOVAR td {
+    background-color: #EFE !important;
+}
+
+.ATRASADO {
+    color: red;
+}
+
+.AGUARDANDO_DEVOLUCAO {
+    color: green;
+}
+
+.DEVOLVIDO {
+    color: green;
+}
+
+.DEVOLVIDO_ATRASO {
+    color: darkorange;
+}
+
+table.tabelaInformacoes {
+    width: auto !important;
+}
+
+table.tabelaInformacoes td {
+    border: none !important;
+}
+
+table.tabelaInformacoes td table td {
+    border: inherit !important;
+}
+
+table.tabelaInformacoes td.label {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+div.data-table {
+    margin-bottom: 20px;
+}
+
+div.data-table td.centralizado {
+    text-align: center;
+}
+
+div.data-table td.acoes {
+    text-align: center;
+}
+
+div.data-table td.acoes button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+div.data-table td.botao-pequeno button {
+    font-size: .8em !important;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+span.titulo {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.espaco-abaixo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.centralizar {
+    display: block;
+    text-align: center;
+}
+
+.direita {
+    display: block;
+    text-align: right;
+}
+
+.preformatted {
+    white-space: pre-wrap;
+}
+
+.ui-wizard-navbar {
+    text-align: inherit !important;
+}
+
+.ui-wizard-nav-next {
+    float: none !important;
+}
+
+.ui-wizard-nav-back {
+    margin-right: 20px !important;
+}
+
+.tipoEntrada {
+    width: 200px;
+    margin-left: 10px;
+}
+
+span.highlight {
+    background-color: yellow;
+}
+
+ol.listaAssuntos {
+    list-style-position: inside;
+    padding: 0;
+}
+
+ol.listaAssuntos li {
+    background-color: #DDD;
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin: 1px 2px;
+    line-height: 20px;
+    white-space: nowrap;
+    float: left;
+}
+
+td.subtabela {
+    padding: 0px !important;
+}
+
+td.subtabela table tbody {
+    border: 0px !important;
+}
+
+td.subtabela table tr {
+    border: 0px !important;
+    border-color: #a6c9e2 !important;
+}
+
+td.subtabela table tr:first-child td {
+    border-top: 0 !important;
+}
+
+td.subtabela table tr:last-child td {
+    border-bottom: 0 !important;
+}
+
+td.subtabela table tr td:first-child,
+td.subtabela table tr th:first-child {
+    border-left: 0 !important;
+}
+
+td.subtabela table tr td:last-child,
+td.subtabela table tr th:last-child {
+    border-right: 0 !important;
+}
+
+td.subtabela table thead {
+    display: none !important;
+}
+
+/*Situação dos Exemplares*/
+.BAIXADO, .EMPRESTIMO_PERMANENTE, .DOADO {
+    color: red;
+}
+
+.DISPONIVEL {
+    color: green;
+}
+
+.CONSULTA_LOCAL {
+    color: blue;
+}
+
+table.tabela-info tr td:first-child {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+div.ficha-catalografica {
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre-wrap;
+    width: 400px;
+    word-wrap: break-word;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr.tirar-borda {
+    border: transparent;
+}
+
+div.ajuda {
+    padding-left: 50px;
+    position: relative;
+    min-height: 45px;
+}
+
+div.ajuda:before {
+    content: "\f059";
+    font-family: FontAwesome;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    color: #87B6D9;
+}

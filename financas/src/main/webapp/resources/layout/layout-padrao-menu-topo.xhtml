@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+>
+<h:body>
+    <!--      <pe:importEnum type="br.jus.tjpr.biblioteca.model.enums.AcessoRecurso"/>
+            <pe:importEnum type="br.jus.tjpr.biblioteca.model.enums.AcessoPerfil"/>-->
+    <h:form>
+        <p:menubar autoDisplay="false" style="background: transparent;">
+            <p:menuitem value="Minhas Reservas" url="/pagina-inicial.jsf" icon="ui-icon-calendar"/>
+            <p:submenu label="Administração">
+                <p:submenu label="Permissões">
+                    <p:menuitem value="Por usuário" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+                <p:menuitem value="Indexação Solr" url="/pagina-inicial.jsf"/>
+            </p:submenu>
+            <p:submenu label="Circulação" icon="ui-icon-refresh">
+                <p:submenu label="Empréstimos">
+                    <p:menuitem value="Consultar" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+            </p:submenu>
+
+            <p:submenu label="Consulta" icon="ui-icon-search">
+                <p:menuitem value="Todas as obras" url="/pagina-inicial.jsf"/>
+                <p:separator/>
+                <p:submenu label="Livro">
+                    <p:menuitem value="Completa" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+                <p:submenu label="Artigo de Periódico">
+                    <p:menuitem value="Simples" url="/pagina-inicial.jsf"/>
+                    <p:menuitem value="Completa" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+            </p:submenu>
+
+            <p:submenu label="Cadastros">
+                <p:submenu label="Usuários">
+                    <p:menuitem value="Consultar" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+                <p:separator/>
+                <p:menuitem value="Série" url="/pagina-inicial.jsf"/>
+                <p:submenu label="Periódico">
+                    <p:menuitem value="Coleção" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+                <p:menuitem value="Legislação" url="/pagina-inicial.jsf"/>
+                <p:separator/>
+                <p:separator/>
+            </p:submenu>
+
+            <p:submenu label="Relatórios">
+                <p:menuitem value="Atividades" url="/pagina-inicial.jsf"/>
+                <p:submenu label="Inventário">
+                    <p:menuitem value="Livro" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+                <p:menuitem value="Empréstimo" url="/pagina-inicial.jsf"/>
+                <p:submenu label="Usuários">
+                    <p:menuitem value="Cadastrados" url="/pagina-inicial.jsf"/>
+                </p:submenu>
+            </p:submenu>
+
+            <p:menuitem value="Ajuda" url="/pagina-inicial.jsf"/>
+        </p:menubar>
+    </h:form>
+</h:body>
+</html>
